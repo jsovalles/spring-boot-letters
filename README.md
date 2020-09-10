@@ -1,4 +1,4 @@
-# spring-boot-employees
+# spring-boot-letters
 
 Proyecto de SpringBoot para la comparación de palabras.
 
