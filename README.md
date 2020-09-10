@@ -2,6 +2,28 @@
 
 Proyecto de SpringBoot para la comparación de palabras.
 
+## Vista previa Heroku
+
+**Si no se desea descargar el proyecto y hacer la compilación/ejecución localmente se puede consumir este servicio mediante la plataforma PaaS Heroku:**
+
+```
+compareLetters (POST) - https://avv-letters.herokuapp.com/letters/v1/letter
+
+compareLetters Request Body example (True response):
+{
+    "firstString": "army",
+    "secondString": "mary"
+}
+
+compareLetters Request Body example (False response):
+{
+    "firstString": "Army",
+    "secondString": "Mary"
+}
+```
+
+**NOTA:** Para el primer consumo del servicio se debe esperar aproximadamente 30 segundos, ya que Heroku apaga automáticamente todos los recursos que no estén en uso.
+
 ## Instalación/Despliegue
 
 Se descarga el proyecto desde GitHub y después se realiza el siguiente comando en la carpeta principal del proyecto
@@ -9,6 +31,22 @@ Se descarga el proyecto desde GitHub y después se realiza el siguiente comando 
 mvn clean install
 
 mvn spring-boot:run
+```
+Link de los diferentes servicios resultantes:
+```
+compareLetters (POST) - http://localhost:8080/letters/v1/letter
+
+compareLetters Request Body example (True response):
+{
+    "firstString": "army",
+    "secondString": "mary"
+}
+
+compareLetters Request Body example (False response):
+{
+    "firstString": "Army",
+    "secondString": "Mary"
+}
 ```
 
 # Descripción del proyecto
